@@ -10,32 +10,25 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-  <div className="absolute inset-0 z-0">
+     <section className="relative h-screen flex items-center justify-center overflow-hidden">
+  <div className="absolute inset-0 -z-10">
     <Image 
-      src="/images/projects/IMG_4774.jpeg" 
-      alt="بيت التلال للمقاولات" 
+      src="/images/projects/IMG_4774.jpeg"
+      alt="بيت التلال للمقاولات"
       fill
+      sizes="100vw"
       style={{ objectFit: 'cover' }}
       priority
     />
-    <div className="absolute inset-0 bg-black/40"></div>
+    <div className="absolute inset-0 bg-black bg-opacity-50"></div>
   </div>
 
-  <div className="relative z-10 text-center text-white p-4">
-    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-      بيت التلال للمقاولات
-    </h1>
-    <p className="text-lg md:text-2xl mb-8">
-      متخصصون في البناء الحديث منذ 2019
-    </p>
-    <div className="flex flex-wrap justify-center gap-4">
-      <Link href="/contact" className="btn-primary">
-        تواصل معنا
-      </Link>
-      <Link href="/services" className="btn-outline bg-transparent text-white border-white hover:bg-white hover:text-[#4CAF50]">
-        خدماتنا
-      </Link>
+  <div className="container text-center text-white z-10">
+    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">بيت التلال للمقاولات</h1>
+    <p className="text-xl md:text-2xl mb-8">متخصصون في البناء الحديث منذ 2019</p>
+    <div className="flex justify-center gap-4">
+      <Link href="/contact" className="btn-primary">تواصل معنا</Link>
+      <Link href="/services" className="btn-outline bg-transparent text-white border-white hover:bg-white hover:text-[#4CAF50]">خدماتنا</Link>
     </div>
   </div>
 </section>
