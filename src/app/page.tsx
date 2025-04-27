@@ -10,29 +10,56 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-  <div className="absolute inset-0 -z-10">
-    <Image 
-      src="/images/projects/IMG_4774.jpeg"
-      alt="بيت التلال للمقاولات"
-      fill
-      sizes="100vw"
-      style={{ objectFit: 'cover' }}
-      priority
-    />
-    <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-  </div>
-
-  <div className="container text-center text-white z-10">
-    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">بيت التلال للمقاولات</h1>
-    <p className="text-xl md:text-2xl mb-8">متخصصون في البناء الحديث منذ 2019</p>
-    <div className="flex justify-center gap-4">
-      <Link href="/contact" className="btn-primary">تواصل معنا</Link>
-      <Link href="/services" className="btn-outline bg-transparent text-white border-white hover:bg-white hover:text-[#4CAF50]">خدماتنا</Link>
-    </div>
-  </div>
-</section>
-
+      <section className="relative h-[80vh] flex items-center">
+        <div className="absolute inset-0 z-0">
+          <Image 
+            src="/images/projects/IMG_4774.jpeg" 
+            alt="بيت التلال للمقاولات" 
+            fill
+            style={{ objectFit: 'cover' }}
+            priority
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        </div>
+        
+        <div className="container relative z-10 text-white">
+          <div className="max-w-3xl animate-fadeIn">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">بيت التلال للمقاولات</h1>
+            <p className="text-xl md:text-2xl mb-8">متخصصون في البناء الحديث منذ 2019</p>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/contact" className="btn-primary">تواصل معنا</Link>
+              <Link href="/services" className="btn-outline bg-transparent text-white border-white hover:bg-white hover:text-[#4CAF50]">خدماتنا</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* About Section */}
+      <section className="section bg-gray-50">
+        <div className="container">
+          <h2 className="section-title">نبذة عنا</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-12">
+            <div className="animate-slideInRight">
+              <p className="text-lg mb-6">
+                مؤسسة بيت التلال للمقاولات هي شركة رائدة في مجال البناء الحديث والمباني الجاهزة في المملكة العربية السعودية. منذ تأسيسنا في عام 2019، نقدم حلولاً مبتكرة وعالية الجودة تلبي احتياجات عملائنا في مختلف القطاعات.
+              </p>
+              <p className="text-lg mb-6">
+                نحن نجمع بين التقنيات الحديثة والخبرة المهنية لتقديم مشاريع متميزة تتسم بالجودة والاستدامة والكفاءة.
+              </p>
+              <Link href="/about" className="btn-primary inline-block">المزيد عنا</Link>
+            </div>
+            <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl animate-slideInLeft">
+              <Image 
+                src="/images/projects/IMG_4762.jpeg" 
+                alt="مشاريع بيت التلال" 
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* Services Section */}
       <section className="section">
         <div className="container">
